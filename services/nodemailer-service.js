@@ -63,7 +63,7 @@ module.exports.sendConfirmationEmail = async(email, confirmationCode) => {
              <div style="font-family:sans-serif;font-size:14px;line-height:22px"><h2 style="color:#F46B5D;margin-bottom:3rem">Confirm email</h2>
                 <div style="max-width:421px"><p>Hello, dear!</p>
                     <p>Thank you for registering with WeFriiends!<br/>To confirm your e-mail address, please click the button below.</p><br/>
-                    <a href=/http://localhost:3000/registration/glad-screen/${confirmationCode} style="display:flex;align-items:center;width:288px;justify-content:center;text-align:center;padding:18px 24px;gap:16px;background:#FB8F67;border-radius:10px;text-decoration:none;color:white;font-size:18px;font-weight:600"> Confirm email</a>
+                    <a href=https://warm-frangollo-93bfd5.netlify.app/registration/glad-screen/${confirmationCode} style="display:flex;align-items:center;width:288px;justify-content:center;text-align:center;padding:18px 24px;gap:16px;background:#FB8F67;border-radius:10px;text-decoration:none;color:white;font-size:18px;font-weight:600"> Confirm email</a>
                     <br/><br/>
                     <p>Still have questions? Head over to our comprehensive <a href="https://wefriiends.atlassian.net/servicedesk/customer/portals" style="color:#F46B5D">Help Center<a/> or just reach out to our <a href="https://wefriiends.atlassian.net/servicedesk/customer/portals" style="color:#F46B5D">support team.</a></p>
                     <p>We look forward to having you on board.</p>
