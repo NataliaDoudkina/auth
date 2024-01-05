@@ -40,11 +40,11 @@ const expSession = {
 // }
 
 const HTTP_PORT = process.env.PORT || 8080;
-
+//https://warm-frangollo-93bfd5.netlify.app
 app.use(express.json());
 app.use(
     cors(
-    {origin: "https://warm-frangollo-93bfd5.netlify.app",
+    {origin: "https://localhost:3000",
     credentials: true
 }
 )
