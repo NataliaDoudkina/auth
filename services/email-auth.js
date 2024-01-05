@@ -61,6 +61,7 @@ module.exports.checkUser = (userData) => {
 };
 
 module.exports.verifyUserEmail = async (confirmationCode) => {
+  console.log("in verify user email")
     try {
         const user = await User.findOne({ confirmationCode: confirmationCode });
         if (!user) {
