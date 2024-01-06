@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
 let User = mongoose.model("users");
 
 const updatePassword = async (req, res) => {
@@ -16,13 +15,13 @@ const updatePassword = async (req, res) => {
   }
   const hashedPassword = await bcrypt.hash(password, 10);
   let updatedUser = {
-    userId: userData.email,
+    userId: email,
     password: hashedPassword,
   };
   try {
-    const result = await updateUser(updatedUser);
+    await updateUser(updatedUser);
   } catch (e) {
-    res.status(422).send("Error!");
+    res.status(422);
   }
 };
 
