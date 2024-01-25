@@ -38,13 +38,13 @@ const expSession = {
 //   app.set('trust proxy', 1) // trust first proxy
 //  // sess.cookie.secure = true // serve secure cookies
 // }
-
+//"https://warm-frangollo-93bfd5.netlify.app"
 const HTTP_PORT = process.env.PORT || 8080;
 //https://warm-frangollo-93bfd5.netlify.app
 app.use(express.json());
 app.use(
     cors(
-    {origin: "https://warm-frangollo-93bfd5.netlify.app",
+    {origin: "http://localhost:3000",
     credentials: true
 }
 )
