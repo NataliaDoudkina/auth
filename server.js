@@ -32,7 +32,7 @@ const expSession = {
          httpOnly: false
     //secure: false
 }}
-//  app.set('trust proxy', 1) 
+  app.set('trust proxy', 1) 
 //app.enable('trust proxy');
 // if (app.get('env') === 'production') {
 //   app.set('trust proxy', 1) // trust first proxy
