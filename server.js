@@ -78,4 +78,7 @@ db.once("open", function() {
     });
    
 });
+app.listen(HTTP_PORT, () => {
+    console.log("Listen on the port 3000...");
+});
 
