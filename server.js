@@ -49,6 +49,7 @@ app.use(
 }
 )
 );
+app.options('*', cors());
 
 //app.use(expressSession(session));
 app.use(cookieSession(session));
